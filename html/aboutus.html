@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Text Styles */
+        .center {
+            text-align: center;
+        }
+        .specialParagraph {
+            font-family: "Verdana", "Sans-Serif";
+        }
+        .teal {
+            color: rgb(0, 114, 114);
+        }
+        .smallTitle {
+            font-size: 1.5em;
+            font-family: "Verdana", "Sans-Serif";
+            color: rgb(0, 114, 114);
+        }
+
+        /* Background */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url("images/billboardOVER.png");
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background: linear-gradient(to right, rgba(136,131,194, 0.95), rgba(0,122,120,0.85));
+            position: relative;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.527);
+            padding-bottom: 30px;
+        }
+
+        .titleGradient {
+            display: inline-block;
+            background: linear-gradient(to right, #006655, #401b40);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .gradientTextBKS {
+            background: linear-gradient(to right, #009a78, #f3a6f9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .studioText {
+            color: #66ff99;
+            font-size: 28px;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 40px;
+        }
+
+        .navButton {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: 0.3s;
+            border: 1px solid black;
+        }
+
+        .navButton.active {
+            background: #ff91f9;
+            color: black;
+        }
+
+        .navButton:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Button */
+        .gbutton {
+            background: linear-gradient(to bottom right, #006856, #af6baf);
+            border: 1px solid black;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0 10px 0;
+            background: linear-gradient(to right, #00362b 0%, #744d77 100%);;
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+            -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="titleGradient">BREAD <span class="gradientTextBKS">&amp; KIRNIC</span></h1>
+    <h2 style="margin-top: -30px;" class="studioText">STUDIOS</h2>
+    <p style="margin-top: -15px;" class="specialParagraph">The official website</p>
+
+    <nav>
+        <a class="navButton" href="home.html">Home</a>
+        <a class="navButton active" href="aboutus.html">About Us</a>
+        <a class="navButton" href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2 class="teal" style="padding-left: 10px;">Hello, I'm Bread!</h2>
+    <p style="color: white; padding-left: 10px;">Welcome to my first website — below you’ll find all the contact info.</p>
+
+    <p class="smallTitle" style="padding-left: 10px;">Links:</p>
+
+    <button class="gbutton" id="Test" type="button">Test Button</button>
+    <a class="specialParagraph" href="contact.html" style="display: block; color: white; padding-left: 10px;">Contact Info</a>
+</main>
+
+<footer>
+    <h1 class="gradientTextBKS" style="padding-top: 0px;">Bread & Kirnic Studios</h1>
+    <p class="specialParagraph" style="-webkit-text-stroke-width: 0;">The official website</p>
+    <p style="-webkit-text-stroke-width: 0;" class="teal">&copy; 2025 Bread & Kirnic Studios</p>
+</footer>
+
+<script src="funtionality.js"></script>
+
+</body>
+</html>

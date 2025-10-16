@@ -1,0 +1,141 @@
+/* Tips for me:
+    1. Make sure to link in any new files to the CSS file.
+    2. Use classes for styles that will be reused.
+    3. Use IDs (EX: #myTitle) for styles that will only be used once.
+    (use: <h1 id="myTitle">Title</h1>)
+    4. Use comments to organize the CSS file.
+    5. LOOK ONLINE, no chatgpt >:( 
+*/
+
+/*========================================
+= Base Styles
+========================================*/
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/*========================================
+= Header Styles
+========================================*/
+header {
+    margin-bottom: -10px;
+    text-align: center;
+    background: linear-gradient(to right, #8883c2, #007a78);
+    position: relative;
+    padding: 60px 20px 40px;
+}
+
+/* Gradient Title */
+.titleGradient {
+    -webkit-text-stroke: black 1.5px;
+    display: inline-block;
+    background: linear-gradient(to right, #006655, #401b40);
+    -web-kit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.gradientTextBKS {
+    background: linear-gradient(to right, #009a78, #f3a6f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Studio text below title */
+.studioText {
+    color: #66ff99;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+
+
+/*========================================
+= Wave Shape
+========================================*/
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 100px;
+}
+
+.wave path {
+    fill: transparent;
+}
+
+/*========================================
+= Footer
+========================================*/
+footer {
+    text-align: center;
+    padding: 30px 0 10px 0;
+    background: linear-gradient(to right, #009a78 0%, #f3a6f9 100%);
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+
+/*========================================
+= Text Colors
+========================================*/
+.black {
+    color: rgb(0, 0, 0);
+}
+.white {
+    color: rgb(255, 255, 255);
+}
+.lightBrown {
+    color: rgb(255, 203, 60);
+}
+
+/*========================================
+= Elements
+========================================*/
+.bgWhiteS {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Rounded corners */
+.corner25 {
+    border-radius: 25px;
+    background: #61968d;
+    border: rgb(0, 0, 0) 1.5px solid;
+    padding: 7px;
+    width: 75px;
+    height: 50px;
+}
+
+/* Buttons */
+.gbutton {
+    background: linear-gradient(to bottom right, #006856, #af6baf);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: rgb(0, 0, 0) 1px solid;
+}

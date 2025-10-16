@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Text Styles */
+        .center {
+            text-align: center;
+        }
+        .specialParagraph {
+            font-family: "Verdana", "Sans-Serif";
+        }
+        .teal {
+            color: rgb(0, 114, 114);
+        }
+        .smallTitle {
+            font-size: 1.5em;
+            font-family: "Verdana", "Sans-Serif";
+            color: rgb(0, 114, 114);
+        }
+
+        /* Background image */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+
+            background-image: url("images/billboardOVER.png");
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            background: linear-gradient(to right, rgba(136,131,194, 0.95), rgba(0,122,120,0.85));
+            position: relative;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.527);
+            padding-bottom: 30px;
+        }
+
+        .titleGradient {
+            display: inline-block;
+            background: linear-gradient(to right, #006655, #1546e4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .gradientTextBKS {
+            background: linear-gradient(to right, #0d53a3, #f3a6f9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .studioText {
+            color: #66ff99;
+            font-size: 28px;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 40px;
+        }
+
+        .navButton {
+            background-color: transparent;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: 0.3s;
+            border: 1px solid black;
+        }
+
+        .navButton.active {
+            background: #ff91f9;
+            color: black;
+        }
+
+        .navButton:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Button */
+        .gbutton {
+            background: linear-gradient(to bottom right, #006856, #af6baf);
+            border: 1px solid black;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0 10px 0;
+            background: linear-gradient(to right, #00362b 0%, #744d77 100%);
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+            -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="titleGradient">BREAD <span class="gradientTextBKS">&amp; KIRNIC</span></h1>
+    <h2 style="margin-top: -30px;" class="studioText">STUDIOS</h2>
+    <p style="margin-top: -15px;" class="specialParagraph">The official website</p>
+
+    <nav>
+        <a class="navButton active" href="home.html">Home</a>
+        <a class="navButton" href="aboutus.html">About Us</a>
+        <a class="navButton" href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2 style="margin-top: 15px; padding-left: 10px;" class="teal">Welcome to Bread & Kirnic Studio's official website!</h2>
+    <p style="font-family:Arial, Helvetica, sans-serif; color: white; padding-left: 10px; margin-left: 10px;">
+        Here, you will find news about games, the Discord, our team, and group, as well as exclusive giveaways!
+    </p>
+    <button class="gbutton" id="Test" type="button">See More</button>
+    <br>
+    <br>
+<H2 style="padding-left: 15px; color: white; -webkit-text-stroke-width: 0; text-align: center; " >Our Games:</H2>
+<img src="images/blacksmith.webp" alt="" style="width: 400px; height: 200px; overflow: hidden; transform: translate(10px, 0px);"> <img src="images/oovolocano.png" alt="Orbital Outrage Volcano" style="width: 400px; height: 200px; overflow: hidden; transform: translate(70px, 0px);">
+<p style="color: white; padding-left: 15px; transform: translate(0px, -15px); font-size: larger;" >Be a Peasant (WIP)</p>
+<p style="color: white; padding-left: 15px; transform: translate(465px, -55px); font-size: larger;" >Orbital Outrage Volcano</p>
+<p style="padding-left: 15px; color: white; transform: translate(5px, -70px);" >Be a Peasant is a game set in the medieval era, where <br> you have to climb your way up while struggling to survive.</p> <p style="transform: translate(487px, -123px);color: white;">Orbital Outrage is a fast paced pvp game set in the cosmos. <br> They are constantly new features and updates, <br>so check it out!</p>
+
+</main>
+
+<footer>
+    <h1 class="gradientTextBKS" style="padding-top: 15px;">Bread & Kirnic Studios</h1>
+</footer>
+
+<script src="funtionality.js"></script>
+
+</body>
+</html>
